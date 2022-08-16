@@ -1,4 +1,36 @@
 ---
 label: question
 hide_body: true
-fields: []
+fields:
+- name: vopros
+  type: text
+  config:
+    required: false
+  label: Вопрос
+  description: Вопрос который задается пользователю
+- name: otvet_1
+  type: text
+  config:
+    required: false
+  label: Ответ 1
+- name: otvet_2
+  type: text
+  config:
+    required: false
+  label: Ответ 2
+- name: tip_voprosa
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Классик / Романтик
+    - " Драматик / Натурал"
+    - Романтик / Классик
+    - Натурал / Драматик
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Тип вопроса
