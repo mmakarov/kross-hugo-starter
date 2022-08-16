@@ -1,6 +1,7 @@
 ---
 label: question
 hide_body: true
+display_field: vopros
 fields:
 - name: vopros
   type: text
